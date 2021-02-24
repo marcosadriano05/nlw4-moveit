@@ -77,4 +77,19 @@
   background: var(--white);
   color: var(--text);
   cursor: not-allowed;
+  border-bottom: 4px solid var(--green);
+}
+
+.checkCircle {
+  width: 20px;
+  height: 20px;
+  margin-left: 1rem;
+  border: 0;
+  border-radius: 50%;
+  background: var(--green);
+  color: var(--white);
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

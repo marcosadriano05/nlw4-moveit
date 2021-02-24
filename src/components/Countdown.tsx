@@ -56,6 +56,9 @@ export function Countdown() {
           className={styles.countdownButton}  
         >
           Ciclo encerrado
+          <span className={styles.checkCircle}>
+            <i className="fas fa-check" />
+          </span>
       </button>
       ) : (
         <>
@@ -75,7 +78,7 @@ export function Countdown() {
             >
               Iniciar contagem
             </button>
-          )};
+          )}
         </>
       )}
     </div>
