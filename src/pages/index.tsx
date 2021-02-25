@@ -1,5 +1,7 @@
 import Head from 'next/head';
 
+import { CountdownContextProvider } from '../contexts/CountdownContext';
+
 import { ExperienceBar } from '../components/ExperienceBar';
 import { Profile } from '../components/Profile';
 import { CompletedChallenges } from '../components/CompletedChallenges';
@@ -15,16 +17,18 @@ export default function Home() {
         <title>Início | Pomodoro App</title>
       </Head>
       <ExperienceBar />
-      <section>
-        <div>
-          <Profile />
-          <CompletedChallenges />
-          <Countdown />
-        </div>
-        <div>
-          <ChallengeBox />
-        </div>
-      </section>
+      <CountdownContextProvider>
+        <section>
+          <div>
+            <Profile />
+            <CompletedChallenges />
+            <Countdown />
+          </div>
+          <div>
+            <ChallengeBox />
+          </div>
+        </section>
+      </CountdownContextProvider>
     </div>
   )
 }
