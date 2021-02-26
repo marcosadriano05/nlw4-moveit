@@ -50,6 +50,9 @@ export function Countdown() {
               onClick={resetCountdown}  
             >
               Abandonar ciclo
+              <span className={styles.xIcon}>
+                <i className="fas fa-times"></i>
+              </span>
             </button>
           ) : (
             <button 
@@ -57,7 +60,10 @@ export function Countdown() {
               className={styles.countdownButton}
               onClick={startCountdown}  
             >
-              Iniciar contagem
+              Iniciar um ciclo
+              <span className={styles.playArrow}>
+                <i className="fas fa-play"></i>
+              </span>
             </button>
           )}
         </>

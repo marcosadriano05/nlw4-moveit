@@ -63,6 +63,13 @@
   background: var(--blue-dark);
 }
 
+.countdownButton span.playArrow {
+  width: 20px;
+  height: 20px;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
 .countdownButtonActive {
   background: var(--white);
   color: var(--text);
@@ -73,6 +80,15 @@
   color: var(--white);
 }
 
+.countdownButtonActive span.xIcon {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
 .countdownButton:disabled {
   background: var(--white);
   color: var(--text);
@@ -80,7 +96,7 @@
   border-bottom: 4px solid var(--green);
 }
 
-.checkCircle {
+.countdownButton:disabled span.checkCircle {
   width: 20px;
   height: 20px;
   margin-left: 1rem;
