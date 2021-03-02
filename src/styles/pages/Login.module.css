@@ -3,10 +3,22 @@
   background: var(--blue);
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
   position: absolute;
+  right: 200px;
+}
+
+.content header {
+  margin-bottom: 70px;
+}
+
+.content header img {
+  width: 300px;
 }
 
 .content main > h1 {
@@ -14,6 +26,7 @@
   font-weight: 600;
   font-size: 2.25rem;
   line-height: 2.875rem;
+  margin-bottom: 20px;
 }
 
 .content section {
@@ -37,6 +50,11 @@ section .gitHubLogo {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 10px;
+}
+
+.content main span {
+  color: var(--white);
 }
 
 .content main label {
@@ -61,6 +79,10 @@ section .gitHubLogo {
   color: var(--white);
 }
 
+.content main input[type="text"]:hover {
+  border: 2px solid var(--blue-dark);
+}
+
 .content main input[type="text"]::placeholder {
   color: var(--text-highlight);
 }
@@ -74,4 +96,10 @@ section .gitHubLogo {
   color: var(--white);
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+@media(max-width: 770px) {
+  .content {
+    position: static;
+  }
 }
