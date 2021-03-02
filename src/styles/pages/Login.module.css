@@ -8,9 +8,19 @@
   justify-content: center;
 }
 
+.container .image {
+  position: absolute;
+  left: 0px;
+}
+
+.container .image img {
+  width: 500px;
+}
+
 .content {
   position: absolute;
   right: 200px;
+  z-index: 10;
 }
 
 .content header {
@@ -31,7 +41,7 @@
 
 .content section {
   height: 60px;
-  width: 318px;
+  width: 80%;
   color: var(--text-highlight);
   display: flex;
   flex-direction: row;
@@ -101,5 +111,23 @@ section .gitHubLogo {
 @media(max-width: 770px) {
   .content {
     position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content section {
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .content section div {
+    text-align: left;
+  }
+
+  .container .image {
+    top: 0px;
   }
 }

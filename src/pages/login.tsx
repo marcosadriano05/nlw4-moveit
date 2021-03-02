@@ -27,6 +27,9 @@ export default function LoginPage() {
       <Head>
         <title>Login | Pomodoro App</title>
       </Head>
+      <div className={styled.image}>
+        <img src="/icons/Simbolo.svg" alt="Simbolo" />
+      </div>
       <div className={styled.content}>
         <header>
           <img src="/logo-full.svg" alt="Logo" />
