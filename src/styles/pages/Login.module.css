@@ -1,0 +1,77 @@
+.container {
+  position: relative;
+  background: var(--blue);
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  position: absolute;
+}
+
+.content main > h1 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.875rem;
+}
+
+.content section {
+  height: 60px;
+  width: 318px;
+  color: var(--text-highlight);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+section .gitHubLogo {
+  width: 40px;
+  height: 40px;
+  margin-right: 25px;
+}
+
+.content main .userSubmit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content main label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.content main input[type="text"] {
+  width: 300px;
+  height: 60px;
+  background: linear-gradient(90deg, var(--blue-dark) 0%, rgba(73, 83, 184, 0.2) 100%);
+  border-radius: 5px 0px 0px 5px;
+  border: 0;
+  padding: 1rem;
+  color: var(--white);
+}
+
+.content main input[type="text"]::placeholder {
+  color: var(--text-highlight);
+}
+
+.content main button {
+  width: 60px;
+  height: 60px;
+  border-radius: 0px 5px 5px 0px;
+  border: 0;
+  background: var(--blue-dark);
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
