@@ -13,7 +13,6 @@ export default function LoginPage() {
   const { register, handleSubmit, errors } = useForm<FormData>();
 
   const onSubmit = (data: FormData) => {
-    console.log(data);
     router.push({
       pathname: '/',
       query: {
@@ -53,7 +52,7 @@ export default function LoginPage() {
                 placeholder="Digite seu username" 
               />
               <button type="submit">
-                <i className="fas fa-arrow-right" />
+                <i aria-hidden className="fas fa-arrow-right" />
               </button>
             </div>
           </form>

@@ -38,7 +38,7 @@ export function Countdown() {
         >
           Ciclo encerrado
           <span className={styles.checkCircle}>
-            <i className="fas fa-check" />
+            <i aria-hidden className="fas fa-check" />
           </span>
       </button>
       ) : (
@@ -51,7 +51,7 @@ export function Countdown() {
             >
               Abandonar ciclo
               <span className={styles.xIcon}>
-                <i className="fas fa-times"></i>
+                <i aria-hidden className="fas fa-times"></i>
               </span>
             </button>
           ) : (
@@ -62,7 +62,7 @@ export function Countdown() {
             >
               Iniciar um ciclo
               <span className={styles.playArrow}>
-                <i className="fas fa-play"></i>
+                <i aria-hidden className="fas fa-play"></i>
               </span>
             </button>
           )}

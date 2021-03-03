@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  min-width: 10rem;
 
   background: var(--white);
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
